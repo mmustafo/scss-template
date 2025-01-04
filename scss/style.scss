@@ -1,7 +1,9 @@
+@import"./utils/variables";
 @import "./vendors/normalize";
 
 
 @import"./base/topography";
+@import "./base/resets";
 
 @import"./components/buttons";
 
@@ -10,5 +12,55 @@
 
 @import"./utils/functions";
 @import"./utils/mixins";
-@import"./utils/variables";
 
+body{
+     overflow-x: hidden;
+}
+
+
+
+
+
+
+.header__image {
+}
+
+
+
+
+.grow__footer__text__p {
+}
+.grow__footer__arrow__img {
+}
+.grow__arrov {
+}
+
+@media screen and (max-width:1200px){
+     .grow {
+          background-color: #FFFFFF;
+          .container {
+               .grow__content {
+                    display: flex;
+                    align-items: center;
+                    gap: 8rem;
+                    .grow__content__text {
+                         .grow__content__text__h2 {
+                              width: 530px;
+                         }
+                         .grow__text__footer__texts {
+                              .grow__text__footer__text{
+                                   display: flex;
+                                   align-items: center;
+                                   
+                              }
+
+                         }
+                    }
+                    .grow__image {
+                         width: 500px;
+                         border-radius: 1rem;
+                    }
+               }
+          }
+     }
+}
